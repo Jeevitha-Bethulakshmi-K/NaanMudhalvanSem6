@@ -27,6 +27,6 @@ def Summarize():
             "parameters":{"min_length":minL,"max_length":maxL},
         })[0]
         
-        return render_template("index.html",result=output[0]["summary_text"])
+        return render_template("index.html",result=output["summary_text"])
     else:
         return render_template("index.html")
